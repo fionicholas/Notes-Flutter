@@ -1,16 +1,8 @@
-# notes_sqflite_bloc
+# Niko Notes
 
-Simple Notes App
+Simple Notes App (Flutter BLoC + Sqflite)
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screenshots
+<pre>
+<img src="https://github.com/fionicholas/Notes-Sqflite-BLOC/blob/master/screenshot/ss_notes_list.png" alt="ss-notes-list" width="330" height="500" /> <img src="https://github.com/fionicholas/Notes-Sqflite-BLOC/blob/master/screenshot/ss_notes_add.png" alt="ss-notes-add" width="330" height="500" />
+</pre>
