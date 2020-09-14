@@ -47,7 +47,7 @@ class _NotesListScreenState extends State<NotesListScreen> {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       key: _scaffoldKey,
-      appBar: AppBar(title: Text('Notes')),
+      appBar: AppBar(title: Text('Niko Notes')),
       floatingActionButton: FloatingActionButton(
           child: Icon(Icons.add),
           onPressed: () {

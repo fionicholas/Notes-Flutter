@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Notes App',
+        title: 'Niko Notes',
         theme: theme(),
         routes: {
           NotesListScreen.routeName: (context) => MultiBlocProvider(
