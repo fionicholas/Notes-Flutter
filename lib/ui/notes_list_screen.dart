@@ -39,7 +39,6 @@ class _NotesListScreenState extends State<NotesListScreen> {
     super.initState();
     notesListBloc = BlocProvider.of<NotesListBloc>(context);
     notesFormBloc = BlocProvider.of<NotesFormBloc>(context);
-    notesListBloc.add(GetNotes());
   }
 
   @override
