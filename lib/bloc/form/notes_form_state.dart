@@ -16,10 +16,10 @@ class InitialNotesFormState extends NotesFormState {}
 
 class NotesFormLoading extends NotesFormState {}
 
-class Error extends NotesFormState {
+class NotesFormError extends NotesFormState {
   final String errorMessage;
 
-  const Error(this.errorMessage);
+  const NotesFormError(this.errorMessage);
 
   List<Object> get props => [errorMessage];
 

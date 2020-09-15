@@ -64,7 +64,7 @@ class _NotesFormScreenState extends State<NotesFormScreen> {
                     Notes note = state.note?.id == null ? Notes() : state.note;
                     return buildForm(note);
                   }
-                  if (state is Error) {
+                  if (state is NotesFormError) {
                     return error(state.errorMessage);
                   }
                   return LoadingIndicator();
