@@ -17,7 +17,7 @@ class NotesFormBloc extends Bloc<NotesFormEvent, NotesFormState> {
       try {
         yield NoteHasData(note: event.note?.id == null ? Notes() : await noteRepository.getNotesById(id : event.note?.id));
       } catch(e) {
-        yield Error(e.toString());
+        yield NotesFormError(e.toString());
       }
     }
     else if (event is BackEvent) {
@@ -27,14 +27,14 @@ class NotesFormBloc extends Bloc<NotesFormEvent, NotesFormState> {
         await noteRepository.insertNotes(event.note);
         yield Success(successMessage : event.note.title + ' created');
       } catch(e) {
-        yield Error(e.toString());
+        yield NotesFormError(e.toString());
       }
     } else if (event is UpdateNotes) {
       try {
         await noteRepository.updateNotes(event.note);
         yield Success(successMessage: event.note.title + ' updated');
       } catch(e) {
-        yield Error(e.toString());
+        yield NotesFormError(e.toString());
       }
     }
   }
